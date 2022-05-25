@@ -15,18 +15,18 @@ class CreatePesquisasQuestoesRespostasTable extends Migration
      */
     public function up()
     {
-        if(!Schema::hasTable('pesquisas_questoes_respostas')){
-            Schema::create('pesquisas_questoes_respostas', function (Blueprint $table) {
+        if(!Schema::hasTable('survey_question_answers')){
+            Schema::create('survey_question_answers', function (Blueprint $table) {
                 $table->id();
-                $table->unsignedBigInteger('pesquisas_questoes_id');
-                $table->unsignedBigInteger('pesquisas_respostas_id');
-                $table->text('resposta');
+                $table->unsignedBigInteger('survey_question_id');
+                $table->unsignedBigInteger('survey_answer_id');
+                $table->text('answer');
                 $table->timestamps();
             });
         }
-        Schema::table('pesquisas_questoes_respostas', function (Blueprint $table) {
-            $table->foreign('pesquisas_questoes_id')->references('id')->on('pesquisas_questoes')->onDelete('cascade');
-            $table->foreign('pesquisas_respostas_id')->references('id')->on('pesquisas_respostas')->onDelete('cascade');
+        Schema::table('survey_question_answers', function (Blueprint $table) {
+            $table->foreign('survey_question_id')->references('id')->on('survey_questions')->onDelete('cascade');
+            $table->foreign('survey_answer_id')->references('id')->on('survey_answers')->onDelete('cascade');
         });
     }
 
@@ -37,6 +37,6 @@ class CreatePesquisasQuestoesRespostasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pesquisas_questoes_respostas');
+        Schema::dropIfExists('survey_question_answers');
     }
 }

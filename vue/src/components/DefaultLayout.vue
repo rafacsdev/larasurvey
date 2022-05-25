@@ -108,15 +108,23 @@ const user = computed(() => store.state.user.data);
 const router = useRouter();
 
 function logout(){
-    store.commit('logout');
-    router.push({
-        name: 'Entrar'
+    store.dispatch('logout')
+    .then(() => {
+      router.push({
+        name: 'Login'
+      })
     })
+    .catch(() => {
+      router.push({
+        name: 'Login'
+      })
+    });
+    
 }
 
 const navigation = [
-  { name: 'Painel', to: {name: 'Painel'} },
-  { name: 'Pesquisas',to: {name: 'Pesquisas'} },
+  { name: 'Painel', to: {name: 'Dashboard'} },
+  { name: 'Pesquisas',to: {name: 'Surveys'} },
 ]
 
 </script>

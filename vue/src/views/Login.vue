@@ -5,7 +5,7 @@
     <p class="mt-2 text-center text-sm text-gray-600">
       Ou
       {{ ' ' }}
-      <router-link :to="{name: 'Registrar'}" class="font-medium text-indigo-600 hover:text-indigo-500"> Cadastre-se Gratuitamente</router-link>
+      <router-link :to="{name: 'Register'}" class="font-medium text-indigo-600 hover:text-indigo-500"> Cadastre-se Gratuitamente</router-link>
     </p>
   </div>
   <form class="mt-8 space-y-6" @submit="login">
@@ -73,7 +73,7 @@ function login(ev){
   store.dispatch('login',user)
     .then(() => {
       router.push({
-        name: "Painel"
+        name: "Dashboard"
       })
     })
     .catch(err => {

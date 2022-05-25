@@ -14,16 +14,16 @@ class CreatePesquisasRespostasTable extends Migration
      */
     public function up()
     {
-        if(!Schema::hasTable('pesquisas_respostas')){
-            Schema::create('pesquisas_respostas', function (Blueprint $table) {
+        if(!Schema::hasTable('survey_answers')){
+            Schema::create('survey_answers', function (Blueprint $table) {
                 $table->id();
-                $table->unsignedBigInteger('pesquisas_id');
-                $table->timestamp('inicio')->nullable();
-                $table->timestamp('fim')->nullable();
+                $table->unsignedBigInteger('survey_id');
+                $table->timestamp('start_date')->nullable();
+                $table->timestamp('end_date')->nullable();
             });
         }
-        Schema::table('pesquisas_respostas', function (Blueprint $table) {
-            $table->foreign('pesquisas_id')->references('id')->on('pesquisas')->onDelete('cascade');
+        Schema::table('survey_answers', function (Blueprint $table) {
+            $table->foreign('survey_id')->references('id')->on('surveys')->onDelete('cascade');
         });
 
     }
@@ -35,6 +35,6 @@ class CreatePesquisasRespostasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pesquisas_respostas');
+        Schema::dropIfExists('survey_answers');
     }
 }

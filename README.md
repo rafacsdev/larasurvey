@@ -9,3 +9,5 @@
 
 ## Feito com :coffee: , Laravel e Vue
 
+<p align="center">Aplicação do tutorial do canal The Codeholic. <a href="https://www.youtube.com/watch?v=WLQDpY7lOLg" target="_blank">Link do videotutorial</a></p>
+
