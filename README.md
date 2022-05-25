@@ -1,13 +1,48 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
-
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Aplicação do tutorial do canal The Codeholic. [YouTube Video](https://youtu.be/WLQDpY7lOLg)
+<table>
+    <tr>
+        <td>
+            <a href="https://laravel.com"><img src="https://i.imgur.com/pBNT1yy.png" /></a>
+        </td>
+        <td>
+            <a href="https://vuejs.org/"><img src="https://i.imgur.com/BxQe48y.png" /></a>
+        </td>
+        <td>
+            <a href="https://tailwindcss.com/"><img src="https://i.imgur.com/wdYXsgR.png" /></a>
+        </td>
+        <td>
+            <img src="https://i.imgur.com/Kp5kTUp.png" />
+        </td>
+    </tr>
+</table> 
 
 ## Feito com :coffee: , Laravel e Vue
 
-<p align="center">Aplicação do tutorial do canal The Codeholic. <a href="https://www.youtube.com/watch?v=WLQDpY7lOLg" target="_blank">Link do videotutorial</a></p>
+## Requirements
+You need to have PHP version **8.0** or above. Node.js version **12.0** or above.
+
+## Demo
+https://yoursurveys.xyz
+
+
+## Installation
+
+#### Backend
+1. Clone the project
+2. Go to the project root directory
+3. Run `composer install`
+4. Create database
+5. Copy `.env.example` into `.env` file and adjust parameters
+6. Run `php artisan serve` to start the project at http://localhost:8000
+
+#### Frontend
+1. Navigate to `vue` folder using terminal
+2. Run `npm install` to install vue.js project dependencies
+3. Copy `vue/.env.example` into `vue/.env` and specify API URL
+4. Start frontend by running `npm run dev`
+5. Open http://localhost:3000
+
+## License
+
+The project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
