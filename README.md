@@ -1,3 +1,6 @@
+
+## Feito com :coffee: , Laravel, Vue e TailWind CSS
+
 Aplicação do tutorial do canal The Codeholic. [YouTube Video](https://youtu.be/WLQDpY7lOLg)
 <table>
     <tr>
@@ -10,13 +13,9 @@ Aplicação do tutorial do canal The Codeholic. [YouTube Video](https://youtu.be
         <td>
             <a href="https://tailwindcss.com/"><img src="https://i.imgur.com/wdYXsgR.png" /></a>
         </td>
-        <td>
-            <img src="https://i.imgur.com/Kp5kTUp.png" />
-        </td>
     </tr>
 </table> 
 
-## Feito com :coffee: , Laravel e Vue
 
 ## Requirements
 You need to have PHP version **8.0** or above. Node.js version **12.0** or above.
